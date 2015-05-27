@@ -6,7 +6,7 @@
 -----
 这是一个简单的微信公众平台 PHP-SDK ，通过调用相应的接口，使你可以轻松地开发微信 App 。测试方法如下：
 
-	1. 进入[微信公众平台](https://mp.weixin.qq.com/)，高级功能，开启开发模式，并设置接口配置信息。修改 `URL` 为 `/wechat/server.php` 的实际位置，修改 `Token` 为 `weixin` （可自行在 `server.php` 中更改）。
+	1. 进入[微信公众平台](https://mp.weixin.qq.com/)，高级功能，开启开发模式，并设置接口配置信息。修改 `URL` 为 `/wechat/server.php` 的实际位置，修改 `Token` 为 `weixin` （也可自行在 `server.php` 中更改）。
 
 	2. 向你的微信公众号发送消息并测试吧！
 
@@ -20,7 +20,7 @@ JS-SDK基本用法
 	
 	`/wechat/jssdk/` 主要为官方提供的JS-SDK，我做了适当修改使得可以适用新浪sae，使用前请做具体配置。
 
-	基于sae的应用在使用前请新建 Storage domain `wechat`，并上传 `jssdk` 下的 `access_token.json` 和 `jsapi_ticket.json` 到该位置，其他支持你本地 I/O 的主机空间在使用时引用原始的 jssdk.php 即可。
+	基于sae的应用在使用前请新建 Storage domain `wechat`，并上传 `jssdk` 下的 `access_token.json` 和 `jsapi_ticket.json` 到该位置，在`sample.php`中修改引用为 `jssdk-sae.php` ；在其他支持你本地 I/O 的主机空间在使用时引用原始的 `jssdk.php` 即可。
 	
 	
 PHP-SDK基本用法
@@ -46,7 +46,7 @@ PHP-SDK基本用法
 	}
 	```
 	
------
+	
 	使用 `getRequest()` 可以获取本次请求中的参数（不区分大小写）：
 
 	```php
@@ -118,7 +118,7 @@ PHP-SDK基本用法
 	CLICK        自定义菜单点击事件（未验证）
 	```
 	
------
+	
 	使用 `responseText()` 方法回复文本消息：
 
 	```php
@@ -160,7 +160,7 @@ PHP-SDK基本用法
 	);
 	```
 	
------
+	
 	最后，实例化 `MyWechat()` 并调用 `run()` 方法即可运行。
 
 	```php
