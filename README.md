@@ -1,4 +1,4 @@
-# wechat-php-sdk
+# wechat-sdk
 简单的微信 PHP-SDK 和 JS-SDK 方法封装
 
 介绍
