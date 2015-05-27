@@ -4,12 +4,12 @@
 介绍
 -----
 
-这是一个简单的微信公众平台 PHP-SDK ，通过调用相应的接口，使你可以轻松地开发微信 App 。测试方法如下：
+这是一个简单的微信公众平台 SDK ，通过调用相应的接口，使你可以轻松地开发微信 App 。测试方法如下：
 
 	1. 进入[微信公众平台](https://mp.weixin.qq.com/)，高级功能，开启开发模式，并设置接口配置信息;
 	   修改 `URL` 为 `/wechat/server.php` 的实际位置，修改 `Token` 为 `weixin`（也可自行在 `server.php` 中修改）;
-	2. `/wechat/phpsdk/Wechat.php` 中封装了与微信公众平台的常用方法，并且定义了可实现的接口;
-	3. `/wechat/jssdk/jssdk.php` 为官方提供的版本，`/wechat/jssdk/jssdk-sae.php` 为适用SAE环境所修改后的文件;
+	2. `/wechat/phpsdk/Wechat.php` 中封装了与微信公众平台的交互的常用方法，并且定义了可实现的接口;
+	3. `/wechat/jssdk/jssdk.php` 为官方提供的版本，`/wechat/jssdk/jssdk-sae.php` 为适用SAE环境所修改后的版本;
 
 
 JS-SDK基本用法：
@@ -120,7 +120,8 @@ PHP-SDK基本用法：
 	CLICK        自定义菜单点击事件（未验证）
 	```
 	
-	
+
+-----
 	使用 `responseText()` 方法回复文本消息：
 
 	```php
@@ -162,7 +163,8 @@ PHP-SDK基本用法：
 	);
 	```
 	
-	
+
+-----
 	最后，实例化 `MyWechat()` 并调用 `run()` 方法即可运行。
 
 	```php
@@ -173,3 +175,4 @@ PHP-SDK基本用法：
 
 	$wechat->run();
 	```
+-----
