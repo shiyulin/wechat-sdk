@@ -9,7 +9,7 @@
 	1. 进入[微信公众平台](https://mp.weixin.qq.com/)，高级功能，开启开发模式，并设置接口配置信息;
 	   修改 `URL` 为 `/wechat/server.php` 的实际位置，修改 `Token` 为 `weixin`（也可自行在 `server.php` 中修改）;
 	2. `/wechat/phpsdk/Wechat.php` 中封装了与微信公众平台的常用方法，并且定义了可实现的接口;
-	3. `/wechat/jssdk/jssdk.php` 为官方提供的版本，`/wechat/jssdk/jssdk-sae.php` 为使用SAE所修改后的文件;
+	3. `/wechat/jssdk/jssdk.php` 为官方提供的版本，`/wechat/jssdk/jssdk-sae.php` 为适用SAE环境所修改后的文件;
 
 
 JS-SDK基本用法：
